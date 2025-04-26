@@ -12,33 +12,7 @@ namespace Lab07
 {
     public partial class fTown : Form
     {
-        public class Town
-        {
-            public string Name;
-            public string Country;
-            public string Region;
-            public int Population;
-            public double YearIncome;
-            public double Square;
-            public bool HasPort;
-            public bool HasAirport;
-
-            public double yearIncomePerInhabitant
-            {
-                get
-                {
-                    return GetYearIncomePerInhabitant();
-                }
-            }
-
-            public double GetYearIncomePerInhabitant()
-            {
-                return YearIncome / Population;
-            }
-        }
-
         private Town town;
-        private Lab07.Town town1;
 
         public fTown(ref Town town)
         {
@@ -51,16 +25,11 @@ namespace Lab07
                 txtCountry.Text = town.Country;
                 txtRegion.Text = town.Region;
                 txtPopulation.Text = town.Population.ToString();
-                txtYearIncome.Text = town.YearIncome.ToString("0.00");
-                txtSquare.Text = town.Square.ToString("0.000");
+                txtYearIncome.Text = town.YearIncome.ToString();
+                txtSquare.Text = town.Square.ToString();
                 chkHasPort.Checked = town.HasPort;
                 chkHasAirport.Checked = town.HasAirport;
             }
-        }
-
-        public fTown(ref Lab07.Town town1)
-        {
-            this.town1 = town1;
         }
 
         private void btnOk_Click(object sender, EventArgs e)
