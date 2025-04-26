@@ -16,5 +16,11 @@ namespace Lab07
         {
             InitializeComponent();
         }
+
+        private void fMain_Resize(object sender, EventArgs e)
+        {
+            int buttonsSize = 5 * btnAdd.Width + 2 * tsSeparator1.Width + 30;
+            btnExit.Margin = new Padding(Width - buttonsSize, 0, 0, 0);
+        }
     }
 }
