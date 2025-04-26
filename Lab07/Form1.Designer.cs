@@ -38,11 +38,11 @@
             this.btnClear = new System.Windows.Forms.ToolStripButton();
             this.tsSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnExit = new System.Windows.Forms.ToolStripButton();
-            this.bindSrcTowns = new System.Windows.Forms.BindingSource(this.components);
             this.gvTowns = new System.Windows.Forms.DataGridView();
+            this.bindSrcTowns = new System.Windows.Forms.BindingSource(this.components);
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindSrcTowns)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvTowns)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindSrcTowns)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -58,7 +58,7 @@
             this.btnExit});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(800, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -68,8 +68,9 @@
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(29, 28);
+            this.btnAdd.Size = new System.Drawing.Size(29, 24);
             this.btnAdd.Text = "Додати запис про місто";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnEdit
             // 
@@ -79,6 +80,7 @@
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(29, 24);
             this.btnEdit.Text = "Редагувати запис";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // tsSeparator1
             // 
@@ -93,6 +95,7 @@
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(29, 24);
             this.btnDel.Text = "Видалити запис";
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnClear
             // 
@@ -102,6 +105,7 @@
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(29, 24);
             this.btnClear.Text = "Очистити дані";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // tsSeparator2
             // 
@@ -116,6 +120,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(29, 24);
             this.btnExit.Text = "Вийти з програми";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // gvTowns
             // 
@@ -125,12 +130,12 @@
             this.gvTowns.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvTowns.DataSource = this.bindSrcTowns;
             this.gvTowns.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gvTowns.Location = new System.Drawing.Point(0, 31);
+            this.gvTowns.Location = new System.Drawing.Point(0, 27);
             this.gvTowns.Name = "gvTowns";
             this.gvTowns.ReadOnly = true;
             this.gvTowns.RowHeadersWidth = 51;
             this.gvTowns.RowTemplate.Height = 24;
-            this.gvTowns.Size = new System.Drawing.Size(800, 419);
+            this.gvTowns.Size = new System.Drawing.Size(800, 423);
             this.gvTowns.TabIndex = 1;
             // 
             // fMain
@@ -143,11 +148,12 @@
             this.Name = "fMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Лабораторна робота №7";
+            this.Load += new System.EventHandler(this.fMain_Load);
             this.Resize += new System.EventHandler(this.fMain_Resize);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindSrcTowns)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvTowns)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindSrcTowns)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
