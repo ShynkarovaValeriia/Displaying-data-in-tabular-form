@@ -1,0 +1,11 @@
+C:\Users\valej\Desktop\Lab07\Lab07\bin\Debug\Lab07.exe.config
+C:\Users\valej\Desktop\Lab07\Lab07\bin\Debug\Lab07.exe
+C:\Users\valej\Desktop\Lab07\Lab07\bin\Debug\Lab07.pdb
+C:\Users\valej\Desktop\Lab07\Lab07\obj\Debug\Lab07.csproj.AssemblyReference.cache
+C:\Users\valej\Desktop\Lab07\Lab07\obj\Debug\Lab07.fMain.resources
+C:\Users\valej\Desktop\Lab07\Lab07\obj\Debug\Lab07.Properties.Resources.resources
+C:\Users\valej\Desktop\Lab07\Lab07\obj\Debug\Lab07.csproj.GenerateResource.cache
+C:\Users\valej\Desktop\Lab07\Lab07\obj\Debug\Lab07.csproj.CoreCompileInputs.cache
+C:\Users\valej\Desktop\Lab07\Lab07\obj\Debug\Lab07.exe
+C:\Users\valej\Desktop\Lab07\Lab07\obj\Debug\Lab07.pdb
+C:\Users\valej\Desktop\Lab07\Lab07\obj\Debug\Lab07.fTown.resources
